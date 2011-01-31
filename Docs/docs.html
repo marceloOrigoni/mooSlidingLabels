@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<link href="../demo/css/style.css" type="text/css" rel="stylesheet" />		
+	</head>
+	<body>
+					<div class="content">
+						<div class="heading">
+							<span class="title">mooSlidingLabels 1.0 Documentation</span>
+						</div>
+						<h3>What's mooSlidingLabels?</h3>
+						<p>
+							mooSlidingLabels allows to give an alternative effect to the placeholder attribute of any given input.<br />
+							Even though the placeholder attribute is HTML5 native, you can still use it in html4, or can use the value attribute, to set the label text.
+						</p>
+						<h3>Which versions of mootools is it compatible with?</h3>
+						<p>
+							mooltiselect is compatible with mootools 1.2 and 1.3.
+						</p>
+						<h3>Which browsers is it compatible with?</h3>
+						<p>
+							It was tested with IE7, IE8, FF2, FF3, Safari 5, Chrome 2 and Opera 11. All under windows.
+						</p>							
+						<h3>How to use it?</h3>
+						<p>
+							You'll need a 2 things to use it. First of all the <a href="http://mootools.net/download" alt="Download MooTools">mootools Core library</a>.
+							you need to include the mootools file and the mooSlidingLabels file between the &lt;head&gt; and &lt;/head&gt; of your html code.<br />
+							then just add to your domready event, the call to mooSlidingLabels, something like:
+						</p>						
+						<pre>
+	window.addEvent('domready', function(){
+			new mooSlidingLabel($$('input.left'));
+			new mooSlidingLabel($$('input.right'),{slideTo:'right',speedOut:100,property:'value'});
+			new mooSlidingLabel($$('input'),{speedOut:500,speedIn: 1500});
+			new mooSlidingLabel($$('input.bottom'),{slideTo:'bottom'});
+		});
+						</pre>
+						<h3>Which Properties can I pass to mooSlidingLabels, and which are the default values?</h3>
+						<span>This are the available options:</span>
+						<pre>
+	slideTo: 'left',
+	speedOut: 250,
+	speedIn: 250,
+	labelClass: 'placeholder',
+	inputClass: '',
+	divClass: 'container',
+	property: 'placeholder'
+						</pre>
+						<p>
+							<b>slideTo</b> it's the label will slide to, accepts 'left', 'top','right' and 'bottom' any other value will be resolved as left. Default 'left.<br />
+							<b>speedOut</b> it's the speed of the Fx.Tween to slide the label onfocus, accepts any integer nad 'short','normal' or 'long'. Defaults to 250.<br />
+							<b>speedIn</b> it's the speed of the Fx.Tween to slide the label onblur, accepts any integer nad 'short','normal' or 'long'. Defaults to 250.<br />
+							<b>labelClass</b> it's the class that will be assigned to the label. Default 'placeholder'<br />
+							<b>inputClass</b> it's the class that will be assigned to the input. Default ''<br />
+							<b>divClass</b> it's the class that will be assigned to the containing div. Default 'container'<br />
+							<b>property</b> it's the property were mooSlidingLabels will get the text to display in the label. accepts 'value' or 'placeholder'. Default 'placeholder'.
+						</p>						
+						<hr />
+						<span> 
+							I recommened to check the <a href="./demo.php">demo</a>, since I'm not the best of the writers, when comes to write documentation, though, I think I made a descent job here.
+						</span>
+					</div>
+	</body>
+</html>

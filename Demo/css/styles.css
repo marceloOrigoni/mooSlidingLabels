@@ -1,0 +1,100 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: arial;
+	}
+
+.wrap{
+	margin:5px auto;
+	position:relative;
+	width:750px;
+}
+
+.body{
+	float:left;
+	width:750px;
+	margin: 0px;
+}
+
+.form{
+    float: left;
+    height: 210px;
+    margin: 25px;
+    padding: 5px;
+    width: 250px;
+}
+
+ul,p,div.demo{
+    float: left;
+    display:inline;
+    margin: 10px;
+    padding: 5px;
+    width: 250px;
+}
+
+li{
+    font-family: Arial;
+    font-size: 10px;
+    text-align: left;	
+}
+
+p.code{
+    font-family: Arial;
+    font-size: 10px;
+    padding: 5px;
+    text-align: left;
+}
+.blue{
+	border:1px solid #009;
+	color: #009;
+}
+
+.green{
+	border:1px solid #090;
+	color: #090;
+}
+
+.grey{
+	border:1px solid #999;
+	color: #999;
+}
+
+.red{
+	border:1px solid #900;
+	color: #900;
+}
+
+.form input{
+	float: left;
+	width: 200px;
+	height: 20px;
+}
+
+.form .rowTop{
+    float: left;
+    height: 20px;
+    margin: 30px 0 0;
+    width: 200px;
+}
+
+.form .rowBot{
+    float: left;
+    height: 20px;
+    margin: 0 0 30px;
+    width: 200px;	
+}
+
+.form .rowLeft{
+    float: right;
+    height: 20px;
+    margin: 5px;
+    width: 200px;
+}
+
+.form .rowRight{
+    float: left;
+    height: 20px;
+    margin: 5px;
+    width: 200px;	
+}
